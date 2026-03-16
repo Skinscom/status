@@ -1,0 +1,53 @@
+{
+  "site": {
+    "name": "Skins.com Status",
+    "baseUrl": "https://status.skins.com",
+    "websiteUrl": "https://skins.com",
+    "repositoryUrl": "https://github.com/Skinscom/status",
+    "subscribeUrl": "https://github.com/Skinscom/status/issues",
+    "description": "System status, uptime history, and incident communication for Skins.com services.",
+    "pollIntervalMinutes": 5
+  },
+  "services": [
+    {
+      "slug": "website",
+      "name": "Website",
+      "shortName": "skins.com",
+      "description": "The main web experience for browsing and trading on Skins.com.",
+      "kind": "http",
+      "url": "https://skins.com",
+      "method": "GET",
+      "timeoutMs": 8000
+    },
+    {
+      "slug": "marketplace",
+      "name": "Marketplace",
+      "shortName": "Marketplace",
+      "description": "Marketplace availability and public system health endpoint.",
+      "kind": "http",
+      "url": "https://api.skins.com/public/system/status",
+      "method": "GET",
+      "timeoutMs": 8000
+    },
+    {
+      "slug": "api",
+      "name": "API",
+      "shortName": "api.skins.com",
+      "description": "Core application API powering trading, auth, and account flows.",
+      "kind": "http",
+      "url": "https://api.skins.com",
+      "method": "GET",
+      "timeoutMs": 8000
+    },
+    {
+      "slug": "realtime-gateway",
+      "name": "Realtime Gateway",
+      "shortName": "ws.skins.com",
+      "description": "TCP reachability for the realtime WebSocket gateway.",
+      "kind": "tcp",
+      "host": "ws.skins.com",
+      "port": 443,
+      "timeoutMs": 5000
+    }
+  ]
+}

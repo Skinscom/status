@@ -1,0 +1,103 @@
+:root {
+  --color-base-0: #ffffff;
+  --color-base-200: #cfd4de;
+  --color-base-300: #6d7790;
+  --color-base-500: #232e43;
+  --color-base-600: #1e2739;
+  --color-base-700: #171d2b;
+  --color-base-800: #141925;
+  --color-base-900: #10151e;
+  --color-base-950: #0c1017;
+  --color-brand-50: #5cf473;
+  --color-brand-100: #4bf364;
+  --color-orange-100: #f3c087;
+  --color-red-100: #ec4a52;
+  --color-blue-100: #a7caf3;
+  --color-surface-primary: rgba(20, 25, 37, 0.92);
+  --color-surface-secondary: rgba(12, 16, 23, 0.88);
+  --color-surface-tertiary: rgba(255, 255, 255, 0.04);
+  --color-border-soft: rgba(207, 212, 222, 0.1);
+  --color-border-strong: rgba(207, 212, 222, 0.18);
+  --color-shadow: rgba(0, 0, 0, 0.28);
+  --color-status-operational: #4bf364;
+  --color-status-degraded: #f3c087;
+  --color-status-outage: #ec4a52;
+  --color-status-unknown: rgba(207, 212, 222, 0.2);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --font-primary: "IBM Plex Sans Variable", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --page-width: 1120px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background:
+    radial-gradient(
+      ellipse 70% 50% at 50% -10%,
+      rgba(75, 243, 100, 0.16),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #141925 0%, #0c1017 100%);
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--color-base-0);
+  background: transparent;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent 75%);
+  content: "";
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+#app {
+  min-height: 100vh;
+}
