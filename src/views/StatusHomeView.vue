@@ -25,7 +25,7 @@
               <p class="status-home-view__eyebrow">Services</p>
               <h2>Monitored components</h2>
             </div>
-            <p>Checks run every {{ statusData.site.pollIntervalMinutes }} minutes.</p>
+            <p>Checks target a {{ statusData.site.pollIntervalMinutes }} minute cadence.</p>
           </div>
 
           <div class="status-home-view__services">

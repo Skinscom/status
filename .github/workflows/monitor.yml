@@ -2,7 +2,8 @@ name: Monitor Services
 
 on:
   schedule:
-    - cron: "2-59/5 * * * *"
+    - cron: "1-59/5 * * * *"
+    - cron: "3-59/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,6 +14,9 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    concurrency:
+      group: monitor-services
+      cancel-in-progress: false
 
     steps:
       - name: Checkout repository
@@ -24,10 +28,23 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Decide whether monitoring should run
+        id: freshness
+        if: github.event_name == 'schedule'
+        run: node scripts/should-run-monitor.mjs
+        env:
+          MONITOR_MIN_INTERVAL_MS: "240000"
+
+      - name: Skip redundant scheduled check
+        if: github.event_name == 'schedule' && steps.freshness.outputs.should_run != 'true'
+        run: echo "Skipping scheduled check because recent monitoring data is still fresh."
+
       - name: Install dependencies
+        if: github.event_name != 'schedule' || steps.freshness.outputs.should_run == 'true'
         run: npm ci
 
       - name: Refresh monitoring data
+        if: github.event_name != 'schedule' || steps.freshness.outputs.should_run == 'true'
         run: npm run monitor
         env:
           STATUS_GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
@@ -35,6 +52,7 @@ jobs:
 
       - name: Commit updated monitoring data
         id: commit_monitoring
+        if: github.event_name != 'schedule' || steps.freshness.outputs.should_run == 'true'
         run: |
           if git diff --quiet; then
             echo "No monitoring changes to commit."
