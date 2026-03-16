@@ -1,17 +1,14 @@
 <template>
   <div class="status-home-view">
     <PageHeader
-      v-if="statusData"
-      :website-url="statusData.site.websiteUrl"
-      :subscribe-url="statusData.site.subscribeUrl"
+      :website-url="siteMeta.websiteUrl"
+      :subscribe-url="siteMeta.subscribeUrl"
     />
 
-    <main class="status-home-view__main">
-      <section v-if="loading && !statusData" class="status-home-view__empty">
-        Loading status data...
-      </section>
+    <StatusHomeSkeleton v-if="loading && !statusData" />
 
-      <section v-else-if="error && !statusData" class="status-home-view__empty">
+    <main v-else class="status-home-view__main">
+      <section v-if="error && !statusData" class="status-home-view__empty">
         {{ error }}
       </section>
 
@@ -67,24 +64,37 @@
     </main>
 
     <SiteFooter
-      v-if="statusData"
-      :name="statusData.site.name"
-      :description="statusData.site.description"
-      :website-url="statusData.site.websiteUrl"
-      :subscribe-url="statusData.site.subscribeUrl"
+      :name="siteMeta.name"
+      :description="siteMeta.description"
+      :website-url="siteMeta.websiteUrl"
+      :subscribe-url="siteMeta.subscribeUrl"
     />
   </div>
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
 import IncidentCard from "@/components/IncidentCard.vue";
 import OverallStatusBanner from "@/components/OverallStatusBanner.vue";
 import PageHeader from "@/components/PageHeader.vue";
 import ServiceStatusCard from "@/components/ServiceStatusCard.vue";
 import SiteFooter from "@/components/SiteFooter.vue";
+import StatusHomeSkeleton from "@/components/StatusHomeSkeleton.vue";
 import { useStatusData } from "@/composables/useStatusData";
 
 const { statusData, loading, error } = useStatusData();
+
+const siteMeta = computed(() => {
+  return (
+    statusData.value?.site ?? {
+      name: "Skins.com Status",
+      description:
+        "System status, uptime history, and incident communication for Skins.com services.",
+      websiteUrl: "https://skins.com",
+      subscribeUrl: "https://github.com/Skinscom/status/issues",
+    }
+  );
+});
 </script>
 
 <style scoped lang="scss">
