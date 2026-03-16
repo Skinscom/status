@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
   issues: read
 
@@ -35,9 +36,11 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Commit updated incident data
+        id: commit_incidents
         run: |
           if git diff --quiet; then
             echo "No incident changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
@@ -46,3 +49,10 @@ jobs:
           git add data public/data
           git commit -m "chore(status): sync incident data"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger site deploy
+        if: steps.commit_incidents.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: gh workflow run "Deploy Status Site" --ref master

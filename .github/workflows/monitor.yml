@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
   issues: read
 
@@ -33,9 +34,11 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Commit updated monitoring data
+        id: commit_monitoring
         run: |
           if git diff --quiet; then
             echo "No monitoring changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
@@ -44,3 +47,10 @@ jobs:
           git add data public/data
           git commit -m "chore(status): refresh monitoring data"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger site deploy
+        if: steps.commit_monitoring.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: gh workflow run "Deploy Status Site" --ref master
