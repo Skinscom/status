@@ -8,7 +8,7 @@
     "description": "System status, uptime history, and incident communication for Skins.com services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-03-20T15:25:34.313Z",
+  "generatedAt": "2026-03-20T15:55:19.542Z",
   "overall": {
     "status": "operational",
     "title": "All Systems Operational",
@@ -17,7 +17,7 @@
   "metrics": {
     "monitoredServices": 4,
     "operationalServices": 4,
-    "averageResponseTime24h": 188,
+    "averageResponseTime24h": 184,
     "uptime90d": 1
   },
   "services": [
@@ -29,15 +29,14 @@
       "target": "https://skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-03-20T15:25:33.350Z",
-      "responseTime": 233,
+      "lastCheckedAt": "2026-03-20T15:55:18.961Z",
+      "responseTime": 139,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 220,
+      "averageResponseTime24h": 221,
       "sparkline": [
-        140,
         168,
         222,
         176,
@@ -84,7 +83,8 @@
         234,
         283,
         108,
-        233
+        233,
+        139
       ],
       "dailyBars": [
         {
@@ -715,7 +715,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 215
+          "averageResponseTime": 213
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skins.com/public/system/status",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-03-20T15:25:33.756Z",
-      "responseTime": 403,
+      "lastCheckedAt": "2026-03-20T15:55:19.192Z",
+      "responseTime": 226,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 349,
+      "averageResponseTime24h": 336,
       "sparkline": [
-        193,
         209,
         323,
         402,
@@ -782,7 +781,8 @@
         1185,
         403,
         232,
-        403
+        403,
+        226
       ],
       "dailyBars": [
         {
@@ -1413,7 +1413,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 352
+          "averageResponseTime": 347
         }
       ]
     },
@@ -1425,15 +1425,14 @@
       "target": "https://api.skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-03-20T15:25:33.843Z",
-      "responseTime": 85,
+      "lastCheckedAt": "2026-03-20T15:55:19.230Z",
+      "responseTime": 36,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 109,
+      "averageResponseTime24h": 107,
       "sparkline": [
-        33,
         57,
         75,
         97,
@@ -1480,7 +1479,8 @@
         97,
         69,
         33,
-        85
+        85,
+        36
       ],
       "dailyBars": [
         {
@@ -2111,7 +2111,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 100
+          "averageResponseTime": 98
         }
       ]
     },
@@ -2123,15 +2123,14 @@
       "target": "ws.skins.com:443",
       "kind": "tcp",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-03-20T15:25:33.990Z",
-      "responseTime": 145,
+      "lastCheckedAt": "2026-03-20T15:55:19.270Z",
+      "responseTime": 38,
       "httpCode": null,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
       "averageResponseTime24h": 73,
       "sparkline": [
-        15,
         32,
         135,
         147,
@@ -2178,7 +2177,8 @@
         49,
         109,
         47,
-        145
+        145,
+        38
       ],
       "dailyBars": [
         {
@@ -2809,7 +2809,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 68
+          "averageResponseTime": 67
         }
       ]
     }
