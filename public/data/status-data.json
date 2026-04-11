@@ -8,7 +8,7 @@
     "description": "System status, uptime history, and incident communication for Skins.com services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-04-11T06:34:47.700Z",
+  "generatedAt": "2026-04-11T06:43:36.559Z",
   "overall": {
     "status": "operational",
     "title": "All Systems Operational",
@@ -17,7 +17,7 @@
   "metrics": {
     "monitoredServices": 4,
     "operationalServices": 4,
-    "averageResponseTime24h": 146,
+    "averageResponseTime24h": 144,
     "uptime90d": 1
   },
   "services": [
@@ -29,15 +29,14 @@
       "target": "https://skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-04-11T06:34:47.004Z",
-      "responseTime": 223,
+      "lastCheckedAt": "2026-04-11T06:43:35.934Z",
+      "responseTime": 100,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 171,
+      "averageResponseTime24h": 169,
       "sparkline": [
-        220,
         146,
         264,
         151,
@@ -84,7 +83,8 @@
         115,
         188,
         186,
-        223
+        223,
+        100
       ],
       "dailyBars": [
         {
@@ -715,7 +715,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 179
+          "averageResponseTime": 169
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skins.com/public/system/status",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-04-11T06:34:47.223Z",
-      "responseTime": 210,
+      "lastCheckedAt": "2026-04-11T06:43:36.077Z",
+      "responseTime": 133,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 273,
+      "averageResponseTime24h": 269,
       "sparkline": [
-        390,
         209,
         199,
         146,
@@ -782,7 +781,8 @@
         421,
         191,
         258,
-        210
+        210,
+        133
       ],
       "dailyBars": [
         {
@@ -1413,7 +1413,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 253
+          "averageResponseTime": 238
         }
       ]
     },
@@ -1425,15 +1425,14 @@
       "target": "https://api.skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-04-11T06:34:47.257Z",
-      "responseTime": 31,
+      "lastCheckedAt": "2026-04-11T06:43:36.106Z",
+      "responseTime": 25,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 80,
+      "averageResponseTime24h": 79,
       "sparkline": [
-        225,
         29,
         40,
         26,
@@ -1480,7 +1479,8 @@
         84,
         30,
         31,
-        31
+        31,
+        25
       ],
       "dailyBars": [
         {
@@ -2111,7 +2111,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 53
+          "averageResponseTime": 50
         }
       ]
     },
@@ -2123,15 +2123,14 @@
       "target": "ws.skins.com:443",
       "kind": "tcp",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-04-11T06:34:47.357Z",
-      "responseTime": 96,
+      "lastCheckedAt": "2026-04-11T06:43:36.197Z",
+      "responseTime": 88,
       "httpCode": null,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
       "averageResponseTime24h": 59,
       "sparkline": [
-        88,
         108,
         49,
         100,
@@ -2178,7 +2177,8 @@
         40,
         108,
         22,
-        96
+        96,
+        88
       ],
       "dailyBars": [
         {
@@ -2809,7 +2809,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 63
+          "averageResponseTime": 66
         }
       ]
     }
