@@ -8,7 +8,7 @@
     "description": "System status, uptime history, and incident communication for Skins.com services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-06-24T21:10:37.151Z",
+  "generatedAt": "2026-06-24T21:48:02.411Z",
   "overall": {
     "status": "operational",
     "title": "All Systems Operational",
@@ -17,8 +17,8 @@
   "metrics": {
     "monitoredServices": 4,
     "operationalServices": 4,
-    "averageResponseTime24h": 294,
-    "uptime90d": 0.9987505206164098
+    "averageResponseTime24h": 287,
+    "uptime90d": 0.99875
   },
   "services": [
     {
@@ -29,15 +29,14 @@
       "target": "https://skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-06-24T21:10:35.139Z",
-      "responseTime": 98,
+      "lastCheckedAt": "2026-06-24T21:48:01.385Z",
+      "responseTime": 256,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 191,
+      "averageResponseTime24h": 194,
       "sparkline": [
-        107,
         133,
         161,
         88,
@@ -84,7 +83,8 @@
         219,
         227,
         178,
-        98
+        98,
+        256
       ],
       "dailyBars": [
         {
@@ -715,7 +715,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 206
+          "averageResponseTime": 208
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skins.com/public/system/status",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-06-24T21:10:36.242Z",
-      "responseTime": 1086,
+      "lastCheckedAt": "2026-06-24T21:48:01.608Z",
+      "responseTime": 205,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9954185755935027,
+      "uptime90d": 0.9954166666666666,
       "uptime24h": 1,
-      "averageResponseTime24h": 803,
+      "averageResponseTime24h": 776,
       "sparkline": [
-        996,
         339,
         2279,
         340,
@@ -782,7 +781,8 @@
         727,
         1279,
         1155,
-        1086
+        1086,
+        205
       ],
       "dailyBars": [
         {
@@ -1413,7 +1413,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 783
+          "averageResponseTime": 751
         }
       ]
     },
@@ -1425,15 +1425,14 @@
       "target": "https://api.skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-06-24T21:10:36.481Z",
-      "responseTime": 233,
+      "lastCheckedAt": "2026-06-24T21:48:01.656Z",
+      "responseTime": 40,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9995835068721366,
+      "uptime90d": 0.9995833333333334,
       "uptime24h": 1,
-      "averageResponseTime24h": 117,
+      "averageResponseTime24h": 114,
       "sparkline": [
-        146,
         85,
         54,
         80,
@@ -1480,7 +1479,8 @@
         118,
         232,
         35,
-        233
+        233,
+        40
       ],
       "dailyBars": [
         {
@@ -2111,7 +2111,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 129
+          "averageResponseTime": 124
         }
       ]
     },
@@ -2123,15 +2123,14 @@
       "target": "ws.skins.com:443",
       "kind": "tcp",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-06-24T21:10:36.512Z",
-      "responseTime": 25,
+      "lastCheckedAt": "2026-06-24T21:48:01.735Z",
+      "responseTime": 73,
       "httpCode": null,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 63,
+      "averageResponseTime24h": 64,
       "sparkline": [
-        72,
         27,
         93,
         30,
@@ -2178,7 +2177,8 @@
         27,
         71,
         85,
-        25
+        25,
+        73
       ],
       "dailyBars": [
         {
