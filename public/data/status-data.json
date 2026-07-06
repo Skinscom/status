@@ -8,7 +8,7 @@
     "description": "System status, uptime history, and incident communication for Skins.com services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-07-06T18:50:41.668Z",
+  "generatedAt": "2026-07-06T20:30:57.092Z",
   "overall": {
     "status": "operational",
     "title": "All Systems Operational",
@@ -17,8 +17,8 @@
   "metrics": {
     "monitoredServices": 4,
     "operationalServices": 4,
-    "averageResponseTime24h": 193,
-    "uptime90d": 0.9986143187066975
+    "averageResponseTime24h": 168,
+    "uptime90d": 0.9986136783733826
   },
   "services": [
     {
@@ -29,15 +29,14 @@
       "target": "https://skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-07-06T18:50:40.876Z",
-      "responseTime": 112,
+      "lastCheckedAt": "2026-07-06T20:30:56.243Z",
+      "responseTime": 192,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 162,
+      "averageResponseTime24h": 169,
       "sparkline": [
-        135,
         188,
         145,
         217,
@@ -84,7 +83,8 @@
         274,
         165,
         126,
-        112
+        112,
+        192
       ],
       "dailyBars": [
         {
@@ -715,7 +715,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 171
+          "averageResponseTime": 173
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skins.com/public/system/status",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-07-06T18:50:41.011Z",
-      "responseTime": 116,
+      "lastCheckedAt": "2026-07-06T20:30:56.389Z",
+      "responseTime": 129,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.994919168591224,
+      "uptime90d": 0.994916820702403,
       "uptime24h": 1,
-      "averageResponseTime24h": 473,
+      "averageResponseTime24h": 394,
       "sparkline": [
-        677,
         350,
         183,
         305,
@@ -782,7 +781,8 @@
         215,
         995,
         458,
-        116
+        116,
+        129
       ],
       "dailyBars": [
         {
@@ -1413,7 +1413,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 501
+          "averageResponseTime": 467
         }
       ]
     },
@@ -1425,15 +1425,14 @@
       "target": "https://api.skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-07-06T18:50:41.046Z",
-      "responseTime": 26,
+      "lastCheckedAt": "2026-07-06T20:30:56.443Z",
+      "responseTime": 47,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9995381062355658,
+      "uptime90d": 0.9995378927911276,
       "uptime24h": 1,
-      "averageResponseTime24h": 85,
+      "averageResponseTime24h": 53,
       "sparkline": [
-        66,
         78,
         97,
         321,
@@ -1480,7 +1479,8 @@
         76,
         104,
         49,
-        26
+        26,
+        47
       ],
       "dailyBars": [
         {
@@ -2123,15 +2123,14 @@
       "target": "ws.skins.com:443",
       "kind": "tcp",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-07-06T18:50:41.080Z",
-      "responseTime": 26,
+      "lastCheckedAt": "2026-07-06T20:30:56.546Z",
+      "responseTime": 96,
       "httpCode": null,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 50,
+      "averageResponseTime24h": 54,
       "sparkline": [
-        37,
         30,
         57,
         59,
@@ -2178,7 +2177,8 @@
         92,
         55,
         58,
-        26
+        26,
+        96
       ],
       "dailyBars": [
         {
@@ -2809,7 +2809,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 53
+          "averageResponseTime": 57
         }
       ]
     }
