@@ -8,7 +8,7 @@
     "description": "System status, uptime history, and incident communication for Skins.com services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-07-25T23:37:06.591Z",
+  "generatedAt": "2026-07-26T00:13:36.316Z",
   "overall": {
     "status": "operational",
     "title": "All Systems Operational",
@@ -17,8 +17,8 @@
   "metrics": {
     "monitoredServices": 4,
     "operationalServices": 4,
-    "averageResponseTime24h": 321,
-    "uptime90d": 0.9982403217697335
+    "averageResponseTime24h": 324,
+    "uptime90d": 0.9982394366197184
   },
   "services": [
     {
@@ -29,15 +29,14 @@
       "target": "https://skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-07-25T23:37:05.158Z",
-      "responseTime": 266,
+      "lastCheckedAt": "2026-07-26T00:13:35.157Z",
+      "responseTime": 241,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 227,
+      "averageResponseTime24h": 230,
       "sparkline": [
-        256,
         249,
         116,
         121,
@@ -84,16 +83,10 @@
         176,
         214,
         257,
-        266
+        266,
+        241
       ],
       "dailyBars": [
-        {
-          "date": "2026-04-27T00:00:00.000Z",
-          "label": "100% uptime",
-          "status": "operational",
-          "availability": 1,
-          "averageResponseTime": 181
-        },
         {
           "date": "2026-04-28T00:00:00.000Z",
           "label": "100% uptime",
@@ -716,6 +709,13 @@
           "status": "operational",
           "availability": 1,
           "averageResponseTime": 230
+        },
+        {
+          "date": "2026-07-26T00:00:00.000Z",
+          "label": "100% uptime",
+          "status": "operational",
+          "availability": 1,
+          "averageResponseTime": 241
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skins.com/public/system/status",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-07-25T23:37:05.858Z",
-      "responseTime": 684,
+      "lastCheckedAt": "2026-07-26T00:13:35.485Z",
+      "responseTime": 307,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9939668174962293,
+      "uptime90d": 0.993963782696177,
       "uptime24h": 1,
-      "averageResponseTime24h": 859,
+      "averageResponseTime24h": 864,
       "sparkline": [
-        590,
         566,
         190,
         2153,
@@ -782,16 +781,10 @@
         336,
         317,
         1897,
-        684
+        684,
+        307
       ],
       "dailyBars": [
-        {
-          "date": "2026-04-27T00:00:00.000Z",
-          "label": "100% uptime",
-          "status": "operational",
-          "availability": 1,
-          "averageResponseTime": 259
-        },
         {
           "date": "2026-04-28T00:00:00.000Z",
           "label": "100% uptime",
@@ -1414,6 +1407,13 @@
           "status": "operational",
           "availability": 1,
           "averageResponseTime": 884
+        },
+        {
+          "date": "2026-07-26T00:00:00.000Z",
+          "label": "100% uptime",
+          "status": "operational",
+          "availability": 1,
+          "averageResponseTime": 307
         }
       ]
     },
@@ -1425,15 +1425,14 @@
       "target": "https://api.skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-07-25T23:37:05.939Z",
-      "responseTime": 75,
+      "lastCheckedAt": "2026-07-26T00:13:35.604Z",
+      "responseTime": 113,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9989944695827049,
+      "uptime90d": 0.9989939637826962,
       "uptime24h": 1,
-      "averageResponseTime24h": 137,
+      "averageResponseTime24h": 140,
       "sparkline": [
-        127,
         53,
         28,
         75,
@@ -1480,16 +1479,10 @@
         102,
         57,
         49,
-        75
+        75,
+        113
       ],
       "dailyBars": [
-        {
-          "date": "2026-04-27T00:00:00.000Z",
-          "label": "100% uptime",
-          "status": "operational",
-          "availability": 1,
-          "averageResponseTime": 50
-        },
         {
           "date": "2026-04-28T00:00:00.000Z",
           "label": "100% uptime",
@@ -2112,6 +2105,13 @@
           "status": "operational",
           "availability": 1,
           "averageResponseTime": 140
+        },
+        {
+          "date": "2026-07-26T00:00:00.000Z",
+          "label": "100% uptime",
+          "status": "operational",
+          "availability": 1,
+          "averageResponseTime": 113
         }
       ]
     },
@@ -2123,15 +2123,14 @@
       "target": "ws.skins.com:443",
       "kind": "tcp",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-07-25T23:37:06.053Z",
-      "responseTime": 107,
+      "lastCheckedAt": "2026-07-26T00:13:35.687Z",
+      "responseTime": 77,
       "httpCode": null,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 61,
+      "averageResponseTime24h": 63,
       "sparkline": [
-        50,
         59,
         99,
         32,
@@ -2178,16 +2177,10 @@
         16,
         105,
         137,
-        107
+        107,
+        77
       ],
       "dailyBars": [
-        {
-          "date": "2026-04-27T00:00:00.000Z",
-          "label": "100% uptime",
-          "status": "operational",
-          "availability": 1,
-          "averageResponseTime": 71
-        },
         {
           "date": "2026-04-28T00:00:00.000Z",
           "label": "100% uptime",
@@ -2810,6 +2803,13 @@
           "status": "operational",
           "availability": 1,
           "averageResponseTime": 62
+        },
+        {
+          "date": "2026-07-26T00:00:00.000Z",
+          "label": "100% uptime",
+          "status": "operational",
+          "availability": 1,
+          "averageResponseTime": 77
         }
       ]
     }
