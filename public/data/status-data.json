@@ -8,7 +8,7 @@
     "description": "System status, uptime history, and incident communication for Skins.com services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-08-07T05:22:02.474Z",
+  "generatedAt": "2026-08-07T06:16:24.662Z",
   "overall": {
     "status": "operational",
     "title": "All Systems Operational",
@@ -17,8 +17,8 @@
   "metrics": {
     "monitoredServices": 4,
     "operationalServices": 4,
-    "averageResponseTime24h": 137,
-    "uptime90d": 0.9980916030534351
+    "averageResponseTime24h": 133,
+    "uptime90d": 0.9980925737538148
   },
   "services": [
     {
@@ -29,15 +29,14 @@
       "target": "https://skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-07T05:22:01.601Z",
-      "responseTime": 196,
+      "lastCheckedAt": "2026-08-07T06:16:23.749Z",
+      "responseTime": 100,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 209,
+      "averageResponseTime24h": 202,
       "sparkline": [
-        121,
         294,
         156,
         186,
@@ -84,7 +83,8 @@
         179,
         118,
         170,
-        196
+        196,
+        100
       ],
       "dailyBars": [
         {
@@ -715,7 +715,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 215
+          "averageResponseTime": 198
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skins.com/public/system/status",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-07T05:22:01.761Z",
-      "responseTime": 142,
+      "lastCheckedAt": "2026-08-07T06:16:23.882Z",
+      "responseTime": 108,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9933842239185751,
+      "uptime90d": 0.9933875890132248,
       "uptime24h": 1,
-      "averageResponseTime24h": 198,
+      "averageResponseTime24h": 192,
       "sparkline": [
-        155,
         433,
         137,
         195,
@@ -782,7 +781,8 @@
         249,
         112,
         100,
-        142
+        142,
+        108
       ],
       "dailyBars": [
         {
@@ -1413,7 +1413,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 156
+          "averageResponseTime": 149
         }
       ]
     },
@@ -1425,15 +1425,14 @@
       "target": "https://api.skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-07T05:22:01.846Z",
-      "responseTime": 73,
+      "lastCheckedAt": "2026-08-07T06:16:23.969Z",
+      "responseTime": 80,
       "httpCode": 200,
       "latestError": null,
-      "uptime90d": 0.9989821882951654,
+      "uptime90d": 0.9989827060020345,
       "uptime24h": 1,
       "averageResponseTime24h": 81,
       "sparkline": [
-        30,
         111,
         29,
         29,
@@ -1480,7 +1479,8 @@
         103,
         135,
         24,
-        73
+        73,
+        80
       ],
       "dailyBars": [
         {
@@ -2111,7 +2111,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 66
+          "averageResponseTime": 68
         }
       ]
     },
@@ -2123,15 +2123,14 @@
       "target": "ws.skins.com:443",
       "kind": "tcp",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-07T05:22:01.882Z",
-      "responseTime": 30,
+      "lastCheckedAt": "2026-08-07T06:16:24.010Z",
+      "responseTime": 34,
       "httpCode": null,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 58,
+      "averageResponseTime24h": 57,
       "sparkline": [
-        104,
         167,
         11,
         101,
@@ -2178,7 +2177,8 @@
         18,
         11,
         90,
-        30
+        30,
+        34
       ],
       "dailyBars": [
         {
@@ -2809,7 +2809,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 48
+          "averageResponseTime": 46
         }
       ]
     }
