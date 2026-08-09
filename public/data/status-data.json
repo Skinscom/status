@@ -8,7 +8,7 @@
     "description": "System status, uptime history, and incident communication for Skins.com services.",
     "pollIntervalMinutes": 5
   },
-  "generatedAt": "2026-08-09T18:16:53.571Z",
+  "generatedAt": "2026-08-09T18:29:15.443Z",
   "overall": {
     "status": "operational",
     "title": "All Systems Operational",
@@ -17,7 +17,7 @@
   "metrics": {
     "monitoredServices": 4,
     "operationalServices": 4,
-    "averageResponseTime24h": 173,
+    "averageResponseTime24h": 172,
     "uptime90d": 0.9981490621915103
   },
   "services": [
@@ -29,15 +29,14 @@
       "target": "https://skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-09T18:16:52.628Z",
-      "responseTime": 252,
+      "lastCheckedAt": "2026-08-09T18:29:14.538Z",
+      "responseTime": 148,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 196,
+      "averageResponseTime24h": 195,
       "sparkline": [
-        101,
         141,
         175,
         108,
@@ -84,7 +83,8 @@
         179,
         241,
         254,
-        252
+        252,
+        148
       ],
       "dailyBars": [
         {
@@ -715,7 +715,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 195
+          "averageResponseTime": 193
         }
       ]
     },
@@ -727,15 +727,14 @@
       "target": "https://api.skins.com/public/system/status",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-09T18:16:52.903Z",
-      "responseTime": 257,
+      "lastCheckedAt": "2026-08-09T18:29:14.683Z",
+      "responseTime": 126,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 0.993583415597236,
       "uptime24h": 1,
-      "averageResponseTime24h": 332,
+      "averageResponseTime24h": 331,
       "sparkline": [
-        381,
         385,
         191,
         197,
@@ -782,7 +781,8 @@
         197,
         195,
         562,
-        257
+        257,
+        126
       ],
       "dailyBars": [
         {
@@ -1413,7 +1413,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 309
+          "averageResponseTime": 304
         }
       ]
     },
@@ -1425,15 +1425,14 @@
       "target": "https://api.skins.com",
       "kind": "http",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-09T18:16:52.949Z",
-      "responseTime": 40,
+      "lastCheckedAt": "2026-08-09T18:29:14.769Z",
+      "responseTime": 80,
       "httpCode": 200,
       "latestError": null,
       "uptime90d": 0.9990128331688055,
       "uptime24h": 1,
       "averageResponseTime24h": 91,
       "sparkline": [
-        121,
         100,
         29,
         28,
@@ -1480,7 +1479,8 @@
         42,
         41,
         42,
-        40
+        40,
+        80
       ],
       "dailyBars": [
         {
@@ -2111,7 +2111,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 93
+          "averageResponseTime": 92
         }
       ]
     },
@@ -2123,15 +2123,14 @@
       "target": "ws.skins.com:443",
       "kind": "tcp",
       "currentStatus": "operational",
-      "lastCheckedAt": "2026-08-09T18:16:52.995Z",
-      "responseTime": 39,
+      "lastCheckedAt": "2026-08-09T18:29:14.808Z",
+      "responseTime": 33,
       "httpCode": null,
       "latestError": null,
       "uptime90d": 1,
       "uptime24h": 1,
-      "averageResponseTime24h": 72,
+      "averageResponseTime24h": 71,
       "sparkline": [
-        75,
         26,
         87,
         103,
@@ -2178,7 +2177,8 @@
         135,
         69,
         43,
-        39
+        39,
+        33
       ],
       "dailyBars": [
         {
@@ -2809,7 +2809,7 @@
           "label": "100% uptime",
           "status": "operational",
           "availability": 1,
-          "averageResponseTime": 66
+          "averageResponseTime": 65
         }
       ]
     }
